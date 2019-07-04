@@ -1,0 +1,74 @@
+$font-stack-for-title: 'Indie Flower', cursive;
+$font-stack-for-links: 'Kirang Haerang', cursive;
+
+html, body {
+height: 100%;
+width: 100%;
+}
+
+.headtitle {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+
+    h1 {
+        background: linear-gradient(to left, black 40%, white 60%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font-stack-for-title;
+        font-size: 3.5vw;
+        font-weight: 1000;
+    }
+}
+
+.block {
+    min-height: 100%;
+    cursor: pointer;
+}
+
+.left-block {
+    background: url("../assets/img/exam.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.right-block {
+    background: url("../assets/img/platform.png") center center no-repeat;
+    background-size: cover;
+
+}
+
+.left-text, .right-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: $font-stack-for-links;
+    font-size: 4vw;
+    font-weight: 1000;
+}
+
+.left-text {
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .headtitle {
+        h1 {
+            background: linear-gradient(to left, #fffffe 40%, white 60%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 1;
+        }
+        .row {
+            .col-lg-6 {
+                min-height: 50%;
+            }
+        }
+    }
+    .block {
+        min-height: 50%;
+    }
+}
