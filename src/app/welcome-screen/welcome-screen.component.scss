@@ -1,27 +1,6 @@
-$font-stack-for-title: 'Indie Flower', cursive;
+@import '../../_variables';
+
 $font-stack-for-links: 'Kirang Haerang', cursive;
-
-html, body {
-height: 100%;
-width: 100%;
-}
-
-.headtitle {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 1;
-
-    h1 {
-        background: linear-gradient(to left, black 40%, white 60%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: $font-stack-for-title;
-        font-size: 3.5vw;
-        font-weight: 1000;
-    }
-}
 
 .block {
     min-height: 100%;
@@ -30,12 +9,12 @@ width: 100%;
 }
 
 .left-block {
-    background: url("../../assets/img/exam.jpg") center center no-repeat;
+    background: $background_for_exams;
     background-size: cover;
 }
 
 .right-block {
-    background: url("../../assets/img/platform.png") center center no-repeat;
+    background: $background_for_learners;
     background-size: cover;
 
 }
@@ -56,19 +35,11 @@ width: 100%;
 }
 
 @media (max-width: 992px) {
-    .headtitle {
-        h1 {
-            background: linear-gradient(to left, #fffffe 40%, white 60%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            z-index: 1;
-        }
         .row {
             .col-lg-6 {
                 min-height: 50%;
             }
         }
-    }
     .block {
         min-height: 50%;
     }

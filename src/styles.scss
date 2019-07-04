@@ -1,3 +1,5 @@
+@import '_variables';
+
 @font-face { 
     font-family: "Indie Flower";
     src: url("assets/fonts/IndieFlower.ttf") format('truetype');
@@ -6,4 +8,10 @@
 @font-face { 
     font-family: "Kirang Haerang";
     src: url("assets/fonts/KirangHaerang-Regular.ttf") format('truetype');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
