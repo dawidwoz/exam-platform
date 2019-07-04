@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
+import { LoginScreenComponent } from './login-screen/login-screen.component';
+import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    LoginScreenComponent,
+    WelcomeScreenComponent
   ],
   imports: [
     BrowserModule,

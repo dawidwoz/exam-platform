@@ -26,15 +26,16 @@ width: 100%;
 .block {
     min-height: 100%;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .left-block {
-    background: url("../assets/img/exam.jpg") center center no-repeat;
+    background: url("../../assets/img/exam.jpg") center center no-repeat;
     background-size: cover;
 }
 
 .right-block {
-    background: url("../assets/img/platform.png") center center no-repeat;
+    background: url("../../assets/img/platform.png") center center no-repeat;
     background-size: cover;
 
 }
